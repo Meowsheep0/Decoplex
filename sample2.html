@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Details - DracoPlex</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #222;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            height: auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        .background-image {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.2;
+        }
+        header {
+            background-color: #333;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 12px;
+        }
+
+        .logo-and-search {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .draco {
+            color: #00d1d1;
+        }
+
+        .plex {
+            color: gold;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #2a2a2a;
+            color: white;
+            font-size: 14px;
+            outline: none;
+            width: 300px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000000;
+        }
+        .anime-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .anime-header img {
+            width: 250px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        .anime-header .info {
+            flex: 1;
+        }
+        .anime-header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .anime-header h3{
+            margin: 0;
+            font-size: 18px;
+            color: #ccc;
+        }
+        .anime-header p {
+            margin: 10px 0;
+            color: #ccc;
+        }
+        .watch-now {
+            display: inline-block;
+            background: #1e90ff;
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 16px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .watch-now:hover {
+            background: #105b9b;
+        }
+        .episodes-section {
+            margin-top: 40px;
+        }
+        .episodes-section h2 {
+            font-size: 28px;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .episode-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .episode {
+            background: #333;
+            border-radius: 16px;
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+        }
+        .episode img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .episode-content {
+            padding: 15px;
+        }
+        .episode-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 0 10px;
+            color: #fff;
+        }
+        .watch-button {
+            display: inline-block;
+            background: #28a745;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        .watch-button:hover {
+            background: #1e7d35;
+        }
+        header {
+            background-color: #333;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="AOT2.jpg" alt="Background" class="background-image">
+        <header>
+            <div class="logo-and-search">
+                <div class="logo">
+                    <a href="#"><span class="draco">Draco</span><span class="plex">plex</span></a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for anime shows...">
+                </div>
+            </div>
+            <nav>
+                <a href="#">Login</a>
+                <a href="#">Try Premium</a>
+            </nav>
+        </header>
+
+        <div class="anime-header">
+            <img src="AOT.png" alt="Anime Poster">
+            <div class="info">
+                <h1>Attack on Titan</h1>
+                <h3>Shingeki no Kyojin</h3>
+                <p><strong>Genre:</strong> Action, Award Winning, Drama, Suspense</p>
+                <p><strong>Episodes:</strong> 25</p>
+                <p><strong>Summary:</strong> Centuries ago, humanity was nearly wiped out by Titans, monstrous humanoid creatures that eat humans for pleasure. Survivors built walls for protection, living in peace for 100 years—until a colossal Titan breaches the outer wall. Eren Yeager, driven by personal loss, joins the Survey Corps with his friends Mikasa and Armin to fight the Titans and uncover a way to defeat them before humanity is completely destroyed.</p>
+                <a href="#" class="watch-now">Watch Now</a>
+            </div>
+        </div>
+
+        <div class="episodes-section">
+            <h2>Episodes</h2>
+            <div class="episode-list">
+                <div class="episode">
+                    <img src="aot ep1.jpg" alt="Episode 1">
+                    <div class="episode-content">
+                        <p class="episode-title">To You, After 2,000 Years: The Fall of Shiganshina, Part 1</p>
+                        <a href="#" class="watch-button">Watch</a>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="aot ep2.jpg" alt="Episode 2">
+                    <div class="episode-content">
+                        <p class="episode-title">That Day - The Fall of Shiganshina: Part 2</p>
+                        <a href="#" class="watch-button">Watch</a>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="aot ep3.jpg" alt="Episode 3">
+                    <div class="episode-content">
+                        <p class="episode-title">A Dim Light Amid Despair - Humanity's Comeback: Part 1</p>
+                        <a href="#" class="watch-button">Watch</a>
+                    </div>
+                </div>
+                <!-- Add more episodes as needed -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

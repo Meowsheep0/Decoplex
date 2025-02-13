@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dracoplex</title>
+    <link rel="icon" type="image/x-icon" href="Dracoplex.ico">
+    <style>
+        
+        body {
+            margin: 40px;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: white;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 12px;
+        }
+
+        .logo-and-search {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .draco {
+            color: #00d1d1;
+        }
+
+        .plex {
+            color: gold;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #2a2a2a;
+            color: white;
+            font-size: 14px;
+            outline: none;
+            width: 300px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000000;
+        }
+
+        .anime-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .anime-card {
+            background-color: #333;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .anime-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .anime-card h3 {
+            font-size: 16px;
+            margin: 10px 0 5px;
+            color: white;
+        }
+
+        .anime-card p {
+            font-size: 14px;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+
+        .anime-card .rating {
+            font-weight: bold;
+            color: #00d1d1;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-and-search">
+            <div class="logo">
+                <a href="#"><span class="draco">Draco</span><span class="plex">plex</span></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for anime shows...">
+            </div>
+        </div>
+        <nav>
+            <a href="#">Login</a>
+            <a href="#">Try Premium</a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <h2>Popular Anime</h2>
+        <div class="anime-grid">
+            <div class="anime-card">
+                <a href="https://example.com/attack-on-titan" target="_blank">
+                    <img src="AOT.png" alt="Attack on Titan Poster">
+                </a>
+                <h3>Attack on Titan</h3>
+                <p>Year: 2013 | Action |
+                    Rating: 9.1</p>
+            </div>
+            <div class="anime-card">
+                <a href="https://example.com/Monster" target="_blank">
+                    <img src="Monster.jpeg" alt="Monster Poster">
+                </a>
+                <h3>Monster</h3>
+                <p>Year: 2004 | Thriller |
+                Rating: 8.7</p>
+            </div>
+            <div class="anime-card">
+                <a href="https://example.com/Death-Note" target="_blank">
+                    <img src="death note.jpg" alt="Death-Note Poster">
+                </a>
+                <h3>Death-Note</h3>
+                <p>Year: 2006 | Thriller |
+                    Rating: 8.9</p>
+            </div>
+            <div class="anime-card">
+                <a href="https://example.com/Fullmetal-Alchemist" target="_blank">
+                    <img src="FMA.jpg" alt=" Fullmetal AlchemistPoster">
+                </a>
+                <h3>Fullmetal Alchemist</h3>
+                <p>Year: 2003 | Adventure |
+                     Rating: 8.5</p>
+            </div>
+            <div class="anime-card">
+                <a href="https://example.com/Fullmetal-Alchemist: Brotherhood" target="_blank">
+                    <img src="FMA Brotherhood.jpg" alt="Fullmetal Alchemist: Brotherhood poster">
+                </a>
+                <h3>Fullmetal Alchemist: Brotherhood</h3>
+                <p>Year: 2009 | Adventure |
+                    Rating: 9.1</p>
+            </div>
+            <div class="anime-card">
+                <a href="https://example.com/One-Punch-Man" target="_blank">
+                    <img src="One punch man.jpg" alt="One Punch Man Poster">
+                </a>
+                <h3>One Punch Man</h3>
+                <p>Year: 2016 | Action |
+                    Rating: 8.7</p>
+            </div>
+            <div class="anime-card">
+                <a href="https://example.com/Demon-Slayer: Kimetsu-no-Yaiba" target="_blank">
+                    <img src="Demon slayer.jpg" alt="Demon Slayer: Kimetsu no Yaiba poster">
+                </a>
+                <h3>Demon Slayer: Kimetsu no Yaiba</h3>
+                <p>Year: 2019 | Adventure |
+                    Rating: 8.6</p>
+            </div>
+            <div class="anime-card">
+                <a href="https://example.com/Hunter-x-Hunter" target="_blank">
+                    <img src="HxH.jpg" alt=" Hunter x Hunter poster">
+                </a>
+                <h3>Hunter x Hunter</h3>
+                <p>Year: 2011 | Adventure |
+                    Rating: 9</p>
+            </div>
+            <div class="anime-card">
+                <a href="https://example.com/My-Hero-Academia" target="_blank">
+                    <img src="MHA.jpg" alt=" My Hero Academia poster">
+                </a>
+                <h3>My Hero Academia</h3>
+                <p>Year: 2016 | Action |
+                    Rating: 8.2</p>
+            </div>
+            <div class="anime-card">
+                <a href="https://example.com/Naruto" target="_blank">
+                    <img src="Naruto.jpg" alt=" Naruto poster">
+                </a>
+                <h3>Naruto</h3>
+                <p>Year: 2002 | Adventure |
+                    Rating: 8.7</p>
+            </div>
+            <div class="anime-card">
+                <a href="https://example.com/Tokyo-Ghoul" target="_blank">
+                    <img src="Tokyo.jpg" alt=" Tokyo Ghoul poster">
+                </a>
+                <h3>Tokyo Ghoul</h3>
+                <p>Year: 2014 | Horror |
+                    Rating: 7.7</p>
+            </div>
+            <div class="anime-card">
+                <a href="https://example.com/Your-Name" target="_blank">
+                    <img src="YN.jpg" alt=" Your Name poster">
+                </a>
+                <h3>Your Name.</h3>
+                <p>Year: 2016 | Fantasy/Romance |
+                    Rating: 8.4</p>
+            </div>
+            <div class="anime-card">
+                <a href="https://example.com/Jujutsu-Kaisen" target="_blank">
+                    <img src="JJK.jpg" alt=" Jujutsu Kaisen poster">
+                </a>
+                <h3>Jujutsu Kaisen</h3>
+                <p>Year: 2018 | Action/Supernatural |
+                    Rating: 8.5</p>
+            </div>
+            <div class="anime-card">
+                <a href="https://example.com/Steins;Gate" target="_blank">
+                    <img src="SG.jpg" alt=" Steins;Gate poster">
+                </a>
+                <h3>Steins;Gate</h3>
+                <p>Year: 2011 | Sci-fi  |
+                    Rating: 8.8</p>
+            </div>
+            <div class="anime-card">
+                <a href="https://example.com/One-Piece" target="_blank">
+                    <img src="Op.jpg" alt=" One Piece poster">
+                </a>
+                <h3>One piece</h3>
+                <p>Year: 1999 | Adventure |
+                    Rating: 9</p>
+            </div>
+          <div class="anime-card">
+          <a href="// example.com/No Game, No Life" target="_blank">
+            <img src="NGNL.jpg" alt="No Game,No Lie poster">
+             </a>
+             <h3>No Game, No Life</h3>
+             <p>Year: 2014 | Adventure |
+                  Rating: 7.6</p>
+          </div>
+          <div class="anime-card">
+          <a href="// example.com/A Silent Voice" target="_blank">
+            <img src="ASP.jpg" alt="A Silent Voice poster">
+             </a>
+             <h3>A Silent Voice</h3>
+             <p>Year: 2016  | Romance/Drama |
+                  Rating: 8.1</p>
+             </div>
+         <div class="anime-card">
+          <a href="// example.com/Code Geass" target="_blank">
+            <img src="cg.jpg" alt="Code Geass poster">
+             </a>
+             <h3>Code Geass</h3>
+             <p>Year: 2006  | sci-fi|
+                  Rating: 8.7</p>
+             </div>
+             <div class="anime-card">
+             <a href="// example.com/Re: Zero - Starting Life in Another World" target="_blank">
+               <img src="REZ.jpg" alt="Re: Zero - Starting Life in Another World poster">
+                </a>
+                <h3>Re: Zero - Starting Life in Another World</h3>
+                <p>Year: 2016 | Adventure |
+                    Rating: 8.1</p>
+              </div>
+              <div class="anime-card">
+             <a href="// example.com/Noragami " target="_blank">
+               <img src="Nora.jpg" alt="Re: Norami poster">
+                </a>
+                <h3>Noragami</h3>
+                <p>Year: 2014 | Action |
+                    Rating: 7.8</p>
+              </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Dracoplex. All rights reserved.
+    </footer>
+</body>
+</html>

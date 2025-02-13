@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Anime - DracoPlex</title>
+    <style>
+         body {
+            font-family: 'Arial', sans-serif;
+            background: #222;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            height: auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        .background-image {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.2;
+        }
+        header {
+            background-color: #333;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 12px;
+        }
+
+        .logo-and-search {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .draco {
+            color: #00d1d1;
+        }
+
+        .plex {
+            color: gold;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #2a2a2a;
+            color: white;
+            font-size: 14px;
+            outline: none;
+            width: 300px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000000;
+        }
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            background-color: #333;
+            margin: 20px auto;
+            border-radius: 12px;
+            max-width: 960px;
+        }
+        .video-player {
+            position: relative;
+            background-color: #000;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        .video-player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .episode-info {
+            padding: 20px;
+            background-color: #444;
+            border-radius: 12px;
+        }
+        .episode-info h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .episode-info p {
+            font-size: 16px;
+            color: #ccc;
+        }
+        .episode-buttons {
+            margin-top: 20px;
+        }
+        .episode-buttons a {
+            display: inline-block;
+            background-color: #00d1d1;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: background 0.3s;
+        }
+        .episode-buttons a:hover {
+            background-color: #1e7d35;
+            
+        }
+        .episode-info .anime-thumbnail {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-and-search">
+            <div class="logo">
+                <a href="#"><span class="draco">Draco</span><span class="plex">plex</span></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for anime shows...">
+            </div>
+        </div>
+        <nav>
+            <a href="#">Login</a>
+            <a href="#">Try Premium</a>
+        </nav>
+    </header>
+
+    <div class="video-container">
+        <!-- Video Player Section -->
+        <div class="video-player">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Episode Info Section -->
+        <div class="episode-info">
+            <h2>Attack on Titan-1</h2>
+            <p> 24 min</p>
+            <p>TV - 25 Episodes (Finished Airing)</p>
+            <p>spring 2013</p>
+            <div class="episode-buttons">
+                <a href="#">Next Episode</a>
+           
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
